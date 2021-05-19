@@ -5,7 +5,6 @@ import platform
 import os
 import http.client, urllib.request, urllib.parse, urllib.error, json, time 
 import pandas as pd
-import PIL # image
 from PIL import ImageFont # image
 from PIL import Image # image
 from PIL import ImageDraw # image
@@ -112,6 +111,7 @@ while True:
             # build text string
             text = pred_df['Line'][i] + '|' + pred_df['Destination'][i]  + '|' + pred_df['Min'][i]
             # retain
+            print(text)
             board_text.append(text)
         # create image through PIL
         img=Image.new("RGBA", (64,32),(0,0,0)) # mode, size, color
