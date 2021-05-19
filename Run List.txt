@@ -19,5 +19,3 @@
 
 5. run program and exit pi
     nohup python3 Prod_Prediction_Ticker.py & sudo nohup python3 Prod_Display_Image.py
-
-NETGEAR02
