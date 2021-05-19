@@ -16,11 +16,11 @@ I wrote Prod_Prediction_Ticker.py & Prod_Display_Image.py to fetch from the WMAT
 Once a connection to the Raspberry Pi is established, follow these steps. Note that I am using a Raspberry Pi Zero WH running Raspberry Pi OS 32-bit with a headless connection through SSH. 
 
 1. Install Python Dependencies.
-    sudo apt-get install python-dev libatlas-base-dev # numpy/pandas dependency
-    sudo pip3 install pandas
-    sudo pip3 install numpy
-    sudo apt-get install -y git python3-dev python3-pillow # dependencies for Pillow
-    git clone https://github.com/hzeller/rpi-rgb-led-matrix.git # rgbmatrix library
+    sudo apt-get install python-dev libatlas-base-dev # numpy/pandas dependency\
+    sudo pip3 install pandas\
+    sudo pip3 install numpy\
+    sudo apt-get install -y git python3-dev python3-pillow # dependencies for Pillow\
+    git clone https://github.com/hzeller/rpi-rgb-led-matrix.git # rgbmatrix library\
 
 2. Setup rpi-rgb-led-matrix library
     cd rpi-rgb-led-matrix
