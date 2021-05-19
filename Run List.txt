@@ -3,14 +3,21 @@
     sudo pip3 install pandas
     sudo pip3 install numpy
     sudo apt-get install -y git python3-dev python3-pillow #dependencies for Pillow #sudo apt-get update  &&
+    git clone https://github.com/hzeller/rpi-rgb-led-matrix.git # rgb matrix
 
-2. Create matrix directory
-    mkdir matrix
-    cd matrix
+2. Initialize matrix stuff
+    cd rpi-rgb-led-matrix
+    make build-python PYTHON=$(which python3)
+    sudo make install-python PYTHON=$(which python3)
 
 3. Clone my repo
     clone 
 
 4. Create your own WMATA_API_KEY.txt file
+    touch WMATA_API_KEY.txt
+    nano WMATA_API_KEY.txt > add your key and save
+
+5. run program and exit pi
+    nohup python3 Prod_Prediction_Ticker.py & sudo nohup python3 Prod_Display_Image.py
 
 NETGEAR02
