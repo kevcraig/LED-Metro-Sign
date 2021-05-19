@@ -1,6 +1,3 @@
-# Metro Sign Code
-# Kevin Craig
-# 04-28-2021
 import platform
 import os
 import http.client, urllib.request, urllib.parse, urllib.error, json, time 
