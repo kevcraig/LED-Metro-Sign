@@ -2,7 +2,7 @@
 
 Build you own real time Washington DC Metro board!
 
-Hardware Used:
+## Hardware:
   1. Raspberry Pi Zero WH
   2. Adafruit RGB Matrix Bonnet for Raspberry Pi
   3. 64x32 RGB LED Matrix - 6mm pitch
@@ -10,7 +10,7 @@ Hardware Used:
   5. 5V power supply
   
 
-Software:
+## Software:
 I wrote Prod_Prediction_Ticker.py & Prod_Display_Image.py to fetch from the WMATA API, format responses for the LED board, and display refreshed information at 10-second intervals. I levered the existing rpi-rgb-led-matrix by Henner Zeller to handle the connection between images stored on the PI and the physical LED board.
 
 Once a connection to the Raspberry Pi is established, you can follow these steps. Note that I am using a Raspberry Pi Zero WH running Raspberry Pi OS 32-bit with a headless connection through SSH. 
