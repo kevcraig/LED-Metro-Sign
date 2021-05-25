@@ -6,6 +6,10 @@ from PIL import ImageFont # image
 from PIL import Image # image
 from PIL import ImageDraw # image
 
+### Inputs
+# Station code the board will display
+board_station = 'E03' # U-street station is defualt. Use get_stations() function to find the station code for your line/station
+
 # WMATA API key
 api_key = open("WMATA_API_KEY.txt", "r") 
 WMATA_KEY = api_key.read()
@@ -13,6 +17,7 @@ headers = {
     'api_key': WMATA_KEY
     }
 
+### Functions
 # Get station data from API
 def get_stations(line_code):
     
@@ -50,7 +55,7 @@ def get_preds(StationCode):
     except Exception as e:
         print("[Errno {0}] {1}".format(e.errno, e.strerror))
 
-# function to control font switches between debuging on mac and raspberrypi
+# Control font switches between debuging on mac and raspberrypi
 def get_font():
     platform_name = platform.system()
     if platform_name == 'Linux': # raspberry pi os
@@ -59,6 +64,7 @@ def get_font():
         font = ImageFont.truetype("Arial.ttf",15)
     return(font)
 
+### Lookups
 # lookup table for spelling changes. Do this so text fits on screen at 8pt font
 line_lookup = {'Brnch Av' : 'BrchAv',
                'Ft.Tottn' : 'Ft.Ttn',
@@ -75,12 +81,11 @@ line_lookup = {'Brnch Av' : 'BrchAv',
 code_lookup = {'ARR' : 'A',
                'BRD' : 'B'}
 
-# Run program
-station = 'E03' # U-street station is defualt. Use get_stations() function to find the station code for your line/station
+### Run program
 lines_to_print = 3 # anything less than 4 will fit
 while True:
     # get preds
-    pred_data = get_preds(station)['Trains']
+    pred_data = get_preds(board_station)['Trains']
     # check if data is present. If not make blank screen
     if len(pred_data) == 0:
         img=Image.new("RGBA", (64,32),(0,0,0)) # mode, size, color

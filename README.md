@@ -1,6 +1,6 @@
 # LED-Metro-Sign
 
-Build you own real time Washington DC Metro board!
+Build you own real time Washington DC Metro board! This board was made to resemble the train prediction board found in DC metro stations. 
 
 ## Hardware:
   1. Raspberry Pi Zero WH
@@ -11,9 +11,9 @@ Build you own real time Washington DC Metro board!
   
 
 ## Software:
-I wrote Prod_Prediction_Ticker.py & Prod_Display_Image.py to fetch from the WMATA API, format responses for the LED board, and display refreshed information at 10-second intervals. I levered the existing rpi-rgb-led-matrix by Henner Zeller to handle the connection between images stored on the PI and the physical LED board.
+I wrote Prod_Prediction_Ticker.py & Prod_Display_Image.py to fetch from the WMATA API, format responses for the LED board, and display refreshed information at 10-second intervals. I used the existing rpi-rgb-led-matrix by Henner Zeller to handle the connection between images stored on the PI and the physical LED board.
 
-Once a connection to the Raspberry Pi is established, follow these steps. Note that I am using a Raspberry Pi Zero WH running Raspberry Pi OS 32-bit with a headless connection through SSH. The following is a list of shell commands to install dependencies and get the board running.
+Once a connection to the Raspberry Pi is established, follow these steps. Note that I used a Raspberry Pi Zero WH running Raspberry Pi OS 32-bit with a headless connection through SSH. The following is a list of shell commands to install dependencies and items from this repo.
 
 1. Install Python Dependencies.
     - sudo apt-get install python-dev libatlas-base-dev # numpy/pandas dependency
