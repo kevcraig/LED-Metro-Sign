@@ -76,10 +76,11 @@ code_lookup = {'ARR' : 'A',
                'BRD' : 'B'}
 
 # Run program
+station = 'E03' # U-street station is defualt. Use get_stations() function to find the station code for your line/station
 lines_to_print = 3 # anything less than 4 will fit
 while True:
     # get preds
-    pred_data = get_preds('E03')['Trains']
+    pred_data = get_preds(station)['Trains']
     # check if data is present. If not make blank screen
     if len(pred_data) == 0:
         img=Image.new("RGBA", (64,32),(0,0,0)) # mode, size, color
