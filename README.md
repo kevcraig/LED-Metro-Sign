@@ -33,10 +33,9 @@ Once a connection to the Raspberry Pi is established, follow these steps. Note t
 
 4. Create your own WMATA_API_KEY.txt file in the LED-Metro-Sign directory. Request a WMATA <b>developer</b> key here https://developer.wmata.com/
     - touch WMATA_API_KEY.txt # create file
-    - nano WMATA_API_KEY.txt  # add key and save
+    - cat > <YOUR KEY HERE> # take note to not enter any excess spaces or lines
 
-5. Update the board_station variable in the Prod_Prediction_Ticker.py to match your desired station
-    - Line 11
+5. Update the board_station variable in line 11 of the Prod_Prediction_Ticker.py file to match your desired station
 
 6. Run both python programs from the LED-Metro-Sign directory and quit ssh connection
     - sudo nohup python3 Prod_Prediction_Ticker.py & sudo nohup python3 Prod_Display_Image.py
