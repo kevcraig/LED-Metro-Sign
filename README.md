@@ -9,7 +9,7 @@ Build you own real time Washington DC Metro board! This board was made to resemb
   4. 16GB Micro SD Card
   5. 5V power supply
   
-  <a> href='https://howchoo.com/pi/raspberry-pi-led-matrix-panel'> Here </a> is a helpful guide that I used to set up hardware components for a LED matrix.
+  <a href='https://howchoo.com/pi/raspberry-pi-led-matrix-panel'> Here </a> is a helpful guide that I used to set up hardware components for a LED matrix.
 
 ## Software:
 I wrote Prod_Prediction_Ticker.py & Prod_Display_Image.py to fetch from the WMATA API, format responses for the LED board, and display refreshed information at 10-second intervals. I used the existing rpi-rgb-led-matrix library by Henner Zeller to handle the connection between images stored on the PI and the physical LED board.
