@@ -43,5 +43,5 @@ Once a connection to the Raspberry Pi is established, follow these steps. Note t
 7. OPTIONAL: Kill all processes on the raspberrypi if you want to troubleshoot something
     - sudo killall python3
 
-6.1 Kill all processes on the raspberrypi if you want to troubleshoot something
+6.1 Kill all python processes on the raspberrypi if you want to troubleshoot something
     - sudo killall python3
