@@ -31,7 +31,7 @@ Once a connection to the Raspberry Pi is established, follow these steps. Note t
 3. Clone this repo
     - git clone https://github.com/kevcraig/LED-Metro-Sign.git
 
-4. Create your own WMATA_API_KEY.txt file in the LED-Metro-Sign directory. Request a WMATA <b>developer</b> key here https://developer.wmata.com/
+4. Create your own WMATA_API_KEY.txt file in the LED-Metro-Sign directory. Request a WMATA <b>developer</b> key <a href = 'https://developer.wmata.com/'> here </a>
     - touch WMATA_API_KEY.txt # create file
     - cat > WMATA_API_KEY.txt # paste your key and take note to not enter any excess spaces or lines
 
@@ -39,6 +39,9 @@ Once a connection to the Raspberry Pi is established, follow these steps. Note t
 
 6. Run both python programs from the LED-Metro-Sign directory. Sign will still run even if you quit SSH connection
     - sudo nohup python3 Prod_Prediction_Ticker.py & sudo nohup python3 Prod_Display_Image.py
+
+7. OPTIONAL: Kill all processes on the raspberrypi if you want to troubleshoot something
+    - sudo killall python3
 
 6.1 Kill all processes on the raspberrypi if you want to troubleshoot something
     - sudo killall python3
