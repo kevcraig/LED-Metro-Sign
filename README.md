@@ -40,8 +40,5 @@ Once a connection to the Raspberry Pi is established, follow these steps. Note t
 6. Run both python programs from the LED-Metro-Sign directory. Sign will still run even if you quit SSH connection
     - sudo nohup python3 Prod_Prediction_Ticker.py & sudo nohup python3 Prod_Display_Image.py
 
-7. OPTIONAL: Kill all processes on the raspberrypi if you want to troubleshoot something
-    - sudo killall python3
-
-6.1 Kill all python processes on the raspberrypi if you want to troubleshoot something
+7. OPTIONAL: Kill all python processes on the raspberrypi if you want to troubleshoot something
     - sudo killall python3
