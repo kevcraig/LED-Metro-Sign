@@ -36,6 +36,10 @@ Once a connection to the Raspberry Pi is established, follow these steps. Note t
     - nano WMATA_API_KEY.txt  # add key and save
 
 5. Update the board_station variable in the Prod_Prediction_Ticker.py to match your desired station
+    - Line 11
 
-5. Run both python programs from the LED-Metro-Sign directory and quit ssh connection
-    - nohup python3 Prod_Prediction_Ticker.py & sudo nohup python3 Prod_Display_Image.py
+6. Run both python programs from the LED-Metro-Sign directory and quit ssh connection
+    - sudo nohup python3 Prod_Prediction_Ticker.py & sudo nohup python3 Prod_Display_Image.py
+
+6.1 Kill all processes on the raspberrypi if you want to troubleshoot something
+    - sudo killall python3
