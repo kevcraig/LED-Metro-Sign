@@ -32,8 +32,9 @@ Once a connection to the Raspberry Pi is established, follow these steps. Note t
     - git clone https://github.com/kevcraig/LED-Metro-Sign.git
 
 4. Create your own WMATA_API_KEY.txt file in the LED-Metro-Sign directory. Request a WMATA <b>developer</b> key <a href = 'https://developer.wmata.com/'> here </a>
+    - cd LED-Metro-Sign
     - touch WMATA_API_KEY.txt # create file
-    - cat > WMATA_API_KEY.txt # paste your key and take note to not enter any excess spaces or lines
+    - cat > WMATA_API_KEY.txt # paste your key and take note to not enter any excess spaces or lines, press CTRL + D to save and quit
 
 5. Update the board_station variable in line 11 of the Prod_Prediction_Ticker.py file to match your desired station
 
