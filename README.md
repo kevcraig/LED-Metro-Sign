@@ -28,7 +28,8 @@ Once a connection to the Raspberry Pi is established, follow these steps. Note t
     - make build-python PYTHON=$(which python3)
     - sudo make install-python PYTHON=$(which python3)
 
-3. Clone this repo
+3. Clone this repo in new directory
+    - cd
     - git clone https://github.com/kevcraig/LED-Metro-Sign.git
 
 4. Create your own WMATA_API_KEY.txt file in the LED-Metro-Sign directory. Request a WMATA <b>developer</b> key <a href = 'https://developer.wmata.com/'> here </a>
